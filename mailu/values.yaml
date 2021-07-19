@@ -108,6 +108,7 @@ ingress:
   externalIngress: true
   tlsFlavor: cert
   annotations:
+    kubernetes.io/ingress.class: "nginx"
     nginx.ingress.kubernetes.io/proxy-body-size: "0"
 
 # Frontend load balancer for non-HTTP(s) services
